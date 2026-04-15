@@ -1,0 +1,27 @@
+{
+  "name": "dungeon",
+  "version": "1.0.0",
+  "description": "> Pure JavaScript. No frameworks. No libraries (except for testing). > Node.js only — runs in the terminal.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test 'test/**/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoAntunesBrombilla/dungeon-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeoAntunesBrombilla/dungeon-js/issues"
+  },
+  "homepage": "https://github.com/LeoAntunesBrombilla/dungeon-js#readme",
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.8.3"
+  }
+}

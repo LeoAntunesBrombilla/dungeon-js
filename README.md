@@ -351,4 +351,3 @@ Things you need to know that aren't JavaScript:
 7. You should now see an `@` walking around a room
 
 That first moment of seeing `@` move is when the project becomes real. Everything else builds from there.
-# dungeon-js
