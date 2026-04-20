@@ -11,3 +11,10 @@ export const WALL = Object.freeze({
   transparent: false,
   color: "white",
 });
+
+export const DOOR = Object.freeze({
+  glyph: "+",
+  walkable: true,
+  transparent: false,
+  color: "brown",
+});

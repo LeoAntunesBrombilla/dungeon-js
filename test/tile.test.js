@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { FLOOR, WALL } from "../src/world/tile.mjs";
+import { DOOR, FLOOR, WALL } from "../src/world/tile.mjs";
 
 describe("tiles", () => {
   it("FLOOR tile should have correct properties", () => {
@@ -13,5 +13,17 @@ describe("tiles", () => {
     assert.strictEqual(WALL.glyph, "#");
     assert.strictEqual(WALL.walkable, false);
     assert.strictEqual(WALL.transparent, false);
+  });
+
+  it("DOOR tile should have correct properties", () => {
+    assert.strictEqual(DOOR.glyph, "+");
+    assert.strictEqual(DOOR.walkable, true);
+    assert.strictEqual(DOOR.transparent, false);
+  });
+
+  it("tiles should be immutable", () => {
+    assert.throws(() => {
+      FLOOR.glyph = "x";
+    }, TypeError);
   });
 });
